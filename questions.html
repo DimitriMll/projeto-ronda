@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style2.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Projeto Ronda</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="site">
+        <header id="header"></header>
+        <form action="submit" onsubmit="event.preventDefault()">
+          <label for="p1" id="p1">Pergunta de sim ou não</label>
+          <div class="yesNo">
+            <button id="btnyes" class="btnBorder font prevent" onclick="clickedYes()">SIM</button>
+            <button id="btnno" class="btnBorder font prevent" onclick="clickedNo()">NÃO</button>
+          </div>
+
+          <label for="p2" id="p2">Pergunta de 1 a 5</label>
+          <div class="oneToFive">
+            <button id="btn1" class="borderLeft font" onclick="clicked1()">1</button>
+            <button id="btn2" class="borderTopBottom font" onclick="clicked2()">2</button>
+            <button id="btn3" class="borderTopBottom font" onclick="clicked3()">3</button>
+            <button id="btn4" class="borderTopBottom font" onclick="clicked4()">4</button>
+            <button id="btn5" class="borderRight font" onclick="clicked5()">5</button>
+          </div>
+
+          <label for="p3" id="p3">Caixa para sugestões </label>
+          <textarea id="sugestoes"></textarea>
+
+          <div class="concluir">
+            <input type="button" value="Enviar" onclick="window.location.href='fim.html'" id="concl" class="btnBorder font prevent"></input>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
