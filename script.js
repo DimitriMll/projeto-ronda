@@ -1,27 +1,10 @@
-function clickedYes() {
-    console.log("Button Yes");
-}
+// LIMPAR
 
-function clickedNo() {
-    console.log("Button No");
-};
+const campoNome = document.getElementById("name");
+const campoLeito = document.getElementById("leito");
+const btnLimpar = document.getElementById("limpar");
 
-function clicked1() {
-    console.log("1");
-};
-
-function clicked2() {
-    console.log("2");
-};
-
-function clicked3() {
-    console.log("3");
-};
-
-function clicked4() {
-    console.log("4");
-};
-
-function clicked5() {
-    console.log("5");
-};
+btnLimpar.addEventListener("click", function(){
+    campoNome.value = "";
+    campoLeito.value = "";
+});
