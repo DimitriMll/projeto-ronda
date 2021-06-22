@@ -166,6 +166,7 @@ form {
 .nota {
     background-color: darkgreen;
     font-size: 18px;
+    color: white;
     border-top-width: 8px;
     border-bottom-width: 8px;
     border: 2px solid white;
